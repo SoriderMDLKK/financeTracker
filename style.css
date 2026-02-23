@@ -12,7 +12,6 @@ body {
     width: 400px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.12);
-    display: none;
 }
 
 h1 {
@@ -69,7 +68,6 @@ li {
 
 .display {
     position: absolute;
-    /*display: none;*/
 }
 
 .display h1,
@@ -82,4 +80,8 @@ li {
     color: white;
     border: none;
     cursor: pointer;
+}
+
+.hidden {
+    display: none;
 }
