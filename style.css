@@ -3,7 +3,7 @@ body {
     background-color: #f4f6f8;
     display: flex;
     justify-content: center;
-    margin- top: 40px;
+    margin-top: 40px;
 }
 
 .container {
@@ -11,8 +11,8 @@ body {
     padding: 20px;
     width: 400px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    display: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+    //display: none;
 }
 
 h1 {
@@ -34,7 +34,7 @@ input, select, button {
     margin-top: 10px;
 }
 
-button {
+.container button {
     background-color: #2ecc71;
     color: white;
     border: none;
@@ -69,9 +69,17 @@ li {
 
 .display {
     position: absolute;
+    display: none;
 }
 
 .display h1,
 .display h2 {
     text-align: center;
+}
+
+.display button { 
+    background-color: #752ecc;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
