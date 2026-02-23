@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="js-separation display">
+        <h1>
+            Student Expense Tracker
+        </h1>
+        <h2>
+            Make Your Money Count
+        </h2>
+
+        <p>
+            Let me help you become a better financial planner and analyst of
+            of your own funds.
+            <br>
+             Choose the kind of transaction that you want to make;
+        </p>
+
+        <div class="button-interface">
+            <select 
+            placeholder="Are you adding funds or are you just spending some">
+                <option> Income </option>
+                <option> Expense </option>
+            </select>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Student Expense Tracker</h1>
+
+        <div class="balance-section">
+            <h2>Your Balance</h2>
+            <h3 id="balance">Ksh 0</h3>
+        </div>
+
+        <div class="form-section">
+            <h3>Add Transaction</h3>
+
+            <input type="text" id="description" placeholder="Description">
+            <input type="number" id="amount" placeholder="Amount">
+
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+
+            <button onclick="addTransaction()">Add</button>
+        </div>
+
+        <div class="transactions-section">
+            <h3>Transactions</h3>
+            <ul id="transactionList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
